@@ -1,12 +1,13 @@
-import Header from "./components/Header"
-import LevelUp from "./components/Levelup"
-import Nutshell from "./components/Nutshell"
+import { Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+
 function App() {
   return (
     <>
-      <Header />
-      <Nutshell />
-      <LevelUp />
+      <Routes>
+        <Route exact path="/*" element={<Home />} />
+      </Routes>
     </>
   )
 }
