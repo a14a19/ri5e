@@ -4,7 +4,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <footer className="bg-black px-36 py-20 flex items-start justify-between w-full flex-col md:flex-row">
+        <footer className="bg-black md:px-36 sm:px-14 px-10 md:py-20 py-14 flex items-start justify-between w-full flex-col lg:flex-row">
             <div className="md:w-[60%] w-full flex flex-col items-start justify-start gap-16">
                 <h2 className="text-5xl font-bold">
                     RI5E
@@ -38,10 +38,13 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col gap-8">
                     <p className="font-light text-xl">Don’t miss any updates!</p>
-                    <div className="flex">
+                    <div className="flex w-full">
                         <input type="email" className="bg-white font-semibold text-lg text-black py-3 px-5 outline-none" placeholder="Drop Your Email*" />
-                        <button className="bg-[#4353FF] px-10 py-4 font-semibold text-lg hover:bg-green-500 transition-all ease-in-out">
+                        <button className="bg-[#4353FF] px-10 py-4 font-semibold text-lg hover:bg-green-500 transition-all ease-in-out md:inline-block hidden">
                             Subscribe
+                        </button>
+                        <button className="bg-[#4353FF] px-6 py-4 font-semibold text-lg hover:bg-green-500 transition-all ease-in-out inline-block md:hidden">
+                            <HiArrowRight />
                         </button>
                     </div>
                 </div>
