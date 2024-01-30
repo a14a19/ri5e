@@ -40,7 +40,7 @@ export default function Footer() {
                     <p className="font-light text-xl">Don’t miss any updates!</p>
                     <div className="flex">
                         <input type="email" className="bg-white font-semibold text-lg text-black py-3 px-5 outline-none" placeholder="Drop Your Email*" />
-                        <button className="bg-blue-700 px-10 py-4 font-semibold text-lg hover:bg-green-500 transition-all ease-in-out">
+                        <button className="bg-[#4353FF] px-10 py-4 font-semibold text-lg hover:bg-green-500 transition-all ease-in-out">
                             Subscribe
                         </button>
                     </div>

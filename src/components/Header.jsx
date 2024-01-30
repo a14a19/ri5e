@@ -6,8 +6,8 @@ export default function Header() {
             <h2 className="text-5xl font-extrabold">
                 RI5E
             </h2>
-            <div className="flex gap-20 items-center justify-center text-xl font-semibold">
-                <Link>
+            <div className="flex gap-20 items-center justify-center text-xl font-medium">
+                <Link to={`/about`} className="hover:underline underline-offset-8 transition-all ease-linear">
                     About Us
                 </Link>
                 <Link>
@@ -16,7 +16,7 @@ export default function Header() {
                 <Link>
                     Careers
                 </Link>
-                <button className="bg-blue-700 px-5 py-3">
+                <button className="bg-[#4353FF] hover:text-blue-500 hover:bg-white transition-all ease-linear px-7 py-4 font-semibold text-lg">
                     Get In Touch
                 </button>
             </div>
