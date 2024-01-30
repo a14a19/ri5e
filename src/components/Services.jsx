@@ -34,7 +34,7 @@ export default function Services() {
                 </h1>
             </div>
             <div className="flex  flex-col lg:flex-row  place-items-center">
-                <div className="parent flex flex-col w-[33.33%] ml-[7%] my-[3%]">
+                <div className="parent flex flex-col md:w-[33.33%] w-[80%] md:ml-[7%] my-[3%]">
                     <div className="overflow-hidden">
                         <div className="box w-[100%] h-[450px]" style={{ backgroundImage: `url(${Image1})`, backgroundSize: "cover", backgroundColor: "#4353FF", backgroundBlendMode: "multiply", position: "relative" }}>
                             <div className="text-[25px] lg:text-[35px] p-[12%] font-sans font-extrabold">
@@ -49,7 +49,7 @@ export default function Services() {
                         <HiArrowRight className="arrowTag group-hover:translate-x-2 transition-all ease-in-out" />
                     </Link>
                 </div>
-                <div className="parent flex flex-col w-[33.33%] my-[3%]">
+                <div className="parent flex flex-col md:w-[33.33%] w-[80%] md:my-[3%] my-[8%]">
                     <div className="overflow-hidden">
                         <div className="box w-[100%] h-[450px]" style={{ backgroundImage: `url(${Image2})`, backgroundSize: "cover", backgroundColor: "#4353FF", backgroundBlendMode: "multiply", position: "relative" }}>
                             <div className="text-[25px] lg:text-[35px] p-[12%] font-sans font-extrabold">
@@ -64,7 +64,7 @@ export default function Services() {
                         <HiArrowRight className="arrowTag group-hover:translate-x-2 transition-all ease-in-out" />
                     </Link>
                 </div>
-                <div className="parent flex flex-col w-[33.33%] mr-[6%] my-[3%]">
+                <div className="parent flex flex-col md:w-[33.33%] w-[80%] md:mr-[6%] my-[3%]">
                     <div className="overflow-hidden">
                         <div className="box w-[100%] h-[450px]" style={{ backgroundImage: `url(${Image3})`, backgroundSize: "cover", backgroundColor: "#4353FF", backgroundBlendMode: "multiply", position: "relative" }}>
                             <div className="text-[25px] lg:text-[35px] p-[12%] font-sans font-extrabold">

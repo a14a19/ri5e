@@ -1,38 +1,40 @@
 import React from 'react';
+const images = import.meta.glob("../assets/images/companies/*");
+
 export default function Companies() {
 
-    const [imagePaths, setImagePaths] = React.useState([]);
+    const imagePaths = Object.keys(images);
+    const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
 
     React.useEffect(() => {
-        const importImages = async () => {
-            const imagePaths = [];
-            for (let i = 1; i <= 5; i++) {
-                try {
-                    const image = await import(`../assets/images/companies/logo_${i}.svg`);
-                    imagePaths.push(image.default);
-                } catch (error) {
-                    console.error(`Error importing image${i}.jpg:`, error);
-                }
-            }
-            setImagePaths(imagePaths);
+        const handleResize = () => {
+        setWindowWidth(window.innerWidth);
         };
 
-        importImages();
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+        window.removeEventListener('resize', handleResize);
+        };
     }, []);
 
     return (
-        <div className="pt-[8%] ">
-            <div className="text-[45px] lg:text-[55px] font-sans font-extrabold mb-[2%] px-[12%] w-[100%] leading-tight">
-                <div className="flex flex-row justify-between pb-[5%]">
-                {imagePaths.map((path, index) => (
-                    <img key={index} src={path} alt={`Image ${index + 1}`} />
-                ))}
-                </div>
-                <div className="flex flex-row justify-between">
-                {imagePaths.map((path, index) => (
-                    <img key={index} src={path} alt={`Image ${index + 1}`} />
-                ))}
-                </div>
+        <div className="pt-[8%] overflow-hidden">
+            <div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 w-full px-0 md:px-20 lg:gap-x-[2rem] gap-x-[4rem] md:gap-y-40 gap-y-20" style={{ marginLeft: windowWidth >= 730 ? windowWidth <= 900 ? "3%" : "6%" : "16%" }}>
+                {
+                    imagePaths && imagePaths.map((client, index) => {
+                        return (
+                            client.includes("pleasure") ?
+                                <div className="md:w-16 w-12" key={index}>
+                                    <img className="rounded-lg" style={{ filter: "grayscale(1) invert(1) brightness(10)" }} src={new URL(client, import.meta.url).href} />
+                                </div>
+                                :
+                                <div className="md:w-16 w-12" key={index}>
+                                    <img className="rounded-lg grayscale contrast-200" src={new URL(client, import.meta.url).href} />
+                                </div>
+                        )
+                    })
+                }
             </div>
         </div>
     )
