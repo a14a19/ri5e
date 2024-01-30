@@ -16,3 +16,36 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.box {
+  transform: scale(1);
+  transition: transform .5s;
+}
+
+.box:hover {
+  transform: scale(1.08);
+}
+
+.parent:hover .box {
+  transform: scale(1.08);
+}
+
+.parent:hover .arrow {
+  transition: all ease-in-out;
+}
+
+.parent:hover .spanTag {
+  color: #34d399;
+}
+
+.parent:hover .arrowTag {
+  transform: translateX(2px);
+  transition: all 0.3s ease-in-out;
+}
+
+.recruit_header {
+  width: 100%;
+  background: linear-gradient(#1b1b1b, transparent);
+  opacity: 0.8;
+  color: white;
+}
