@@ -22,14 +22,18 @@ export default function AboutUs() {
     13355 Berlin
     Germany`
 
+    const desc5 =`We are the definition of Embedded Recruitment. Yes, we are just putting it out there. We’ve been in the recruitment industry for many years and know exactly how to find the sweet spots. We knew that our name would define us when we founded our company. Get our hot take on it and see for yourself. Let’s get the ball rolling.`
+
     const img = `https://www.wearekeen.com/hubfs/WeAreKeen_May_2021/images/europe-desktop.svg`
+    const img2 = `https://www.wearekeen.com/hubfs/7-Oct-18-2023-10-13-31-2842-AM.png`
 
     return (
         <>
+            <Levelup title={`About WeAreRi5e`} isTop={true} img1={img2}  btnPresent={false} description1={desc5} conditionForPara={true} />
             <Bestrecruit />
             <Nutshell title={`This is what we stand for`} btnPresent={false} img={img3} description1={NutshellDesc1} description2={NutshellDesc2} />
             <VerticalTimelineComp />
-            <Levelup title={`Our Offices`} img1={img} buttontext={`Get in Touch`} description1={levelUpDesc1} conditionForPara={false} description2={levelUpDesc2} />
+            <Levelup title={`Our Offices`} img1={img} isTop={false}  btnPresent={true} buttontext={`Get in Touch`} description1={levelUpDesc1} conditionForPara={false} description2={levelUpDesc2} />
             <WorkTogether />
         </>
     )
