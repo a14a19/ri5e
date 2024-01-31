@@ -4,7 +4,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <footer className="bg-black md:px-36 sm:px-14 px-10 md:py-20 py-14 flex items-start justify-between w-full flex-col lg:flex-row">
+        <footer className="bg-black md:px-36 sm:px-14 px-10 md:py-20 py-14 gap-y-8 flex items-start justify-between w-full flex-col lg:flex-row">
             <div className="md:w-[60%] w-full flex flex-col items-start justify-start gap-16">
                 <h2 className="text-5xl font-bold">
                     RI5E
@@ -25,7 +25,7 @@ export default function Footer() {
                     <span>Copyright RI5E Inc. 2024</span> / <Link className="hover:text-green-500 transition-all ease-in-out">Privacy Policy</Link> / <Link className="hover:text-green-500 transition-all ease-in-out">Imprint</Link>
                 </div>
             </div>
-            <div className="md:w-[40%] w-full flex flex-col items-start justify-start gap-16">
+            <div className="lg:w-[40%] w-full flex flex-col items-start justify-start gap-16">
                 <div className="flex flex-col gap-10">
                     <h2 className="text-5xl font-black">
                         Follow us
@@ -39,7 +39,7 @@ export default function Footer() {
                 <div className="flex flex-col gap-8">
                     <p className="font-light text-xl">Don’t miss any updates!</p>
                     <div className="flex w-full">
-                        <input type="email" className="bg-white font-semibold text-lg text-black py-3 px-5 outline-none" placeholder="Drop Your Email*" />
+                        <input type="email" className="bg-white font-semibold text-lg text-black py-3 px-5 outline-none sm:w-[100%] w-[90%]" placeholder="Drop Your Email*" />
                         <button className="bg-[#4353FF] px-10 py-4 font-semibold text-lg hover:bg-green-500 transition-all ease-in-out md:inline-block hidden">
                             Subscribe
                         </button>
