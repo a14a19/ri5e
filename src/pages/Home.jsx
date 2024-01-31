@@ -29,7 +29,7 @@ export default function Home() {
             <Companies />
             <Services />
             <Nutshell title={`Ri5e in a Nutshell`} btnPresent={true} img={img2} buttontext={` More about us `} description1={NutshellDesc1} description2={NutshellDesc2}/>
-            <Levelup title={`Level up your hiring game with us`} img1={img} buttontext={`View all vacancies`} description1={levelUpDesc1} conditionForPara={true} description2={levelUpDesc2} />
+            <Levelup title={`Level up your hiring game with us`} isTop={false} img1={img}  btnPresent={true} buttontext={`View all vacancies`} description1={levelUpDesc1} conditionForPara={true} description2={levelUpDesc2} />
             <Footer />
         </>
     )
