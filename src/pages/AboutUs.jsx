@@ -5,6 +5,8 @@ import img3 from '../assets/images/recruitment/r3.jpg';
 
 import WorkTogether from "../components/WorkTogether";
 import VerticalTimelineComp from "../subComponents/VerticalTimelineComp";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function AboutUs() {
     const NutshellDesc1 = `What sets us apart? Our unwavering dedication to growth. We transcend mere recruitment, cultivating opportunities for both our team and the companies we champion. From startups to IPOs, we've left a mark on Europe's tech landscape. As disruptors, we merge innovation with data-driven finesse, ensuring swift solutions and top-tier talent acquisitions for our partners. `
@@ -22,19 +24,23 @@ export default function AboutUs() {
     13355 Berlin
     Germany`
 
-    const desc5 =`We are the definition of Embedded Recruitment. Yes, we are just putting it out there. We’ve been in the recruitment industry for many years and know exactly how to find the sweet spots. We knew that our name would define us when we founded our company. Get our hot take on it and see for yourself. Let’s get the ball rolling.`
+    const desc5 = `We are the definition of Embedded Recruitment. Yes, we are just putting it out there. We’ve been in the recruitment industry for many years and know exactly how to find the sweet spots. We knew that our name would define us when we founded our company. Get our hot take on it and see for yourself. Let’s get the ball rolling.`
 
     const img = `https://www.wearekeen.com/hubfs/WeAreKeen_May_2021/images/europe-desktop.svg`
     const img2 = `https://www.wearekeen.com/hubfs/7-Oct-18-2023-10-13-31-2842-AM.png`
 
     return (
         <>
-            <Levelup title={`About WeAreRi5e`} isTop={true} img1={img2}  btnPresent={false} description1={desc5} conditionForPara={true} />
+            <div className="px-16 pt-3">
+                <Header />
+            </div>
+            <Levelup title={`About WeAreRi5e`} isTop={true} img1={img2} btnPresent={false} description1={desc5} conditionForPara={true} />
             <Bestrecruit />
             <Nutshell title={`This is what we stand for`} btnPresent={false} img={img3} description1={NutshellDesc1} description2={NutshellDesc2} />
             <VerticalTimelineComp />
-            <Levelup title={`Our Offices`} img1={img} isTop={false}  btnPresent={true} buttontext={`Get in Touch`} description1={levelUpDesc1} conditionForPara={false} description2={levelUpDesc2} />
+            <Levelup title={`Our Offices`} img1={img} isTop={false} btnPresent={true} buttontext={`Get in Touch`} description1={levelUpDesc1} conditionForPara={false} description2={levelUpDesc2} />
             <WorkTogether />
+            <Footer />
         </>
     )
 }
