@@ -35,7 +35,7 @@ export default function AboutUs() {
                 <Header />
             </div>
             <Levelup title={`About WeAreRi5e`} isTop={true} img1={img2} btnPresent={false} description1={desc5} conditionForPara={true} />
-            <Bestrecruit />
+            <Bestrecruit titlePresent={true} />
             <Nutshell title={`This is what we stand for`} btnPresent={false} img={img3} description1={NutshellDesc1} description2={NutshellDesc2} />
             <VerticalTimelineComp />
             <Levelup title={`Our Offices`} img1={img} isTop={false} btnPresent={true} buttontext={`Get in Touch`} description1={levelUpDesc1} conditionForPara={false} description2={levelUpDesc2} />
