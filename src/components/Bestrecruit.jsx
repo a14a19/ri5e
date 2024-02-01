@@ -1,11 +1,11 @@
-export default function Bestrecruit() {
+export default function Bestrecruit({ titlePresent }) {
     return (
-        <div className="pt-[10%] ">
-            <div className="text-[45px] lg:text-[55px] font-sans font-extrabold mb-[5%] lg:mb-[6%]	px-[5%] lg:px-[8%] leading-tight text-center">
+        <div className="py-[5%] ">
+            { titlePresent ? <div className="text-[45px] lg:text-[55px] font-sans font-extrabold mb-[5%] lg:mb-[6%]	px-[5%] lg:px-[8%] leading-tight text-center">
                 <h1>
                     "We want to be the best and most fun embedded recruitment company in Europe"
                 </h1>
-            </div>
+            </div> : <></>}
             <div className="grid gap-y-12  lg:grid-cols-4 grid-cols-2 px-[10%] mt-[20%] md:mt-[5%] ">
 
                 
