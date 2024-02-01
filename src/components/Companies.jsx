@@ -1,5 +1,5 @@
 import React from 'react';
-const images = import.meta.glob("../assets/images/companies/*");
+const images = import.meta.glob("../../public/companies/*");
 
 export default function Companies() {
 
