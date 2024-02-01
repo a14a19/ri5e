@@ -15,9 +15,9 @@ export default function Header() {
         <>
             <SideBar open={open} setOpen={setOpen} />
             <header className="z-30 flex justify-between items-center relative w-full">
-                <h2 className="md:text-5xl sm:text-3xl text-2xl font-extrabold">
+                <Link to={`/`} className="md:text-5xl sm:text-3xl text-2xl font-extrabold">
                     RI5E
-                </h2>
+                </Link>
                 <div className="lg:flex hidden gap-20 items-center justify-center text-xl font-medium">
                     <Link to={`/about-us`} className="hover:underline underline-offset-8 transition-all ease-linear py-8">
                         About Us

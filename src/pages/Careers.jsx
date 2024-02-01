@@ -1,3 +1,5 @@
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 import Levelup from "../components/Levelup";
 
 export default function Careers() {
@@ -6,9 +8,11 @@ export default function Careers() {
 
     return (
         <>
-            <Levelup title={`Join the definition of recruitment`} isTop={true} img1={img2} buttontext={`See job openings`} btnPresent={true}  conditionForPara={true} />
-
-
+            <div className="px-16 pt-3">
+                <Header />
+            </div>
+            <Levelup title={`Join the definition of recruitment`} isTop={true} img1={img2} buttontext={`See job openings`} btnPresent={true} conditionForPara={true} />
+            <Footer />
         </>
     )
 }
