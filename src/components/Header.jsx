@@ -28,9 +28,9 @@ export default function Header() {
                     <Link to={`/careers`} className="hover:underline underline-offset-8 transition-all ease-linear py-6" onMouseEnter={() => setMenuDropDown({ state: true, value: "Careers" })} onMouseLeave={() => setMenuDropDown({ state: false, value: "" })}>
                         Careers
                     </Link>
-                    <button className="bg-[#4353FF] hover:text-blue-500 hover:bg-white transition-all ease-linear px-7 py-4 font-semibold text-lg">
+                    <Link to={`/contact`} className="bg-[#4353FF] hover:text-blue-500 hover:bg-white transition-all ease-linear px-7 py-4 font-semibold text-lg">
                         Get In Touch
-                    </button>
+                    </Link>
                 </div>
                 <button className="lg:hidden flex bg-[#4353FF] rounded-full sm:p-3 p-2 items-center justify-center" onClick={() => setOpen(!open)}>
                     <HiOutlineMenuAlt4 />
