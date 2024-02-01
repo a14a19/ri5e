@@ -1,5 +1,6 @@
 import React from 'react';
 const images = import.meta.glob("../../public/static/images/*");
+const images1 = import.meta.glob("../assets/images/companies/*");
 
 export default function Companies() {
 
@@ -7,6 +8,8 @@ export default function Companies() {
     const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
 
     React.useEffect(() => {
+        console.log(images);
+        console.log("from assets",images1);
         const handleResize = () => {
         setWindowWidth(window.innerWidth);
         };
